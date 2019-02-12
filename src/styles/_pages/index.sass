@@ -1,0 +1,303 @@
+
+
+// common buttons styles
+.buttons
+	margin-top: 40px
+	display: flex
+	flex-direction: column
+	button
+		text-transform: uppercase
+		font-size: .9rem
+		&:last-child
+			set margin top
+			margin: 10px 0 0 0
+	.btn-dark
+		width: 150px
+	.btn-outline-dark
+		width: 200px
+	.btn-pill
+		border-radius: 2rem
+	// tablet
+	+media-breakpoint-up(md)
+		flex-direction: row
+		button
+			&:last-child
+				// reset the margin top and set the margin left
+				margin: 0 0 0 20px
+
+
+// banner
+.banner-section
+	.info-col
+		display: flex
+		justify-content: center
+		align-items: center
+		.info-box
+			width: 100%
+			.intro
+				p
+					color: $xamdam
+					font-size: 25px
+					font-weight: 300
+					margin-bottom: 0
+					&.name
+						font-weight: 700
+						font-size: 40px
+					&.role
+						font-size: 18px
+			.social-media-box
+				margin-top: 20px
+				display: flex
+				.item
+					padding: 5px
+					margin: 5px
+					background: #1869ff
+					width: 40px
+					height: 40px
+					// make the icon in the middle
+					display: flex
+					justify-content: center
+					align-items: center
+					i
+						font-size: 1.5rem
+						color: white
+
+
+	.img-box
+		background: url("../img/top_bg.png") no-repeat center center
+		// background: red
+		background-size: cover
+		width: 100%
+		img
+			max-height: 495px
+			position: relative
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+
+
+
+// end banner
+
+// work
+.work-section
+	margin-top: 50px
+	.nav
+		margin-bottom: 20px
+		.nav-item
+			.nav-link
+				color: #8f8f90
+	.cards
+		.item
+			margin-bottom: 20px
+			.card
+				box-shadow: 0px 0px 2px grey
+				border-radius: 1.5rem
+				overflow: hidden
+				img
+					height: 300px
+					width: 100%
+					background: #8f8f90
+				.card-body
+					.catergory
+						text-transform: uppercase
+						margin-bottom: 10px
+					.project-title,
+					.year
+						font-size: 1.2rem
+						font-weight: 700
+						text-transform: uppercase
+	.load-more-work
+		margin-top: 20px
+		button
+			text-transform: uppercase
+			display: block
+			margin: auto
+		.btn-pill
+			border-radius: 1.5rem
+			padding: 5px 30px
+			border: 2px $xamdam solid
+			font-weight: 700
+// end work
+
+
+
+// about me
+.aboutme-section
+	margin-top: 100px
+	// left side
+	.img-box
+		position: relative
+		img
+			width: 100%
+		// make a half bg
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 70%
+			width: 85%
+			background: $xamnhat
+			z-index: -2
+			opacity: .6
+
+	// right-side
+	.content-col
+		// force the content in the middle
+		display: flex
+		justify-content: center
+		align-items: center
+		.content
+			margin: 20px 0 0 0
+			h1
+				color: $xamdam
+				text-transform: uppercase
+				font-weight: 700
+			.big-text
+				color: $xamnhat
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 4rem
+			.text
+				color: #9e9e9e
+	// tablet
+	+media-breakpoint-up(md)
+		// left side
+		.outer-img-box
+			// make the img smaller
+			padding: 80px
+	// pc
+	+media-breakpoint-up(lg)
+		.outer-img-box
+			// reset the img size
+			padding: 0
+		.content
+			margin: 0 0 0 20px
+			.big-text
+				font-size: 6rem
+// end about me
+
+// feedback
+
+.section-feedback
+	margin-top: 100px
+	margin-bottom: 200px
+	padding: 0
+	.box
+		position: relative
+		background: url("../img/testimonial_bg.png"), #332f30
+		.text
+			padding: 50px 30px
+			p
+				color: $xamnhat
+				text-align: center
+				margin-bottom: 0
+				line-height: 2rem
+		.info-circle-card
+			position: absolute
+			bottom: -110px
+			left: 50%
+			transform: translateX(-50%)
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			.avatar-swrapper
+				overflow: hidden
+				border-radius: 50%
+				width: 87px
+				height: 87px
+				background: $xamdam
+				border: white 3px solid
+			.info-content
+				text-align: center
+				p
+					margin-bottom: 0
+				.name
+					font-weight: 500
+					font-size: 1.2rem
+				.company
+					color: $xam
+					text-transform: capitalize
+	+media-breakpoint-up(md)
+		.box
+			.text
+				padding: 50px 100px
+	+media-breakpoint-up(lg)
+		.box
+			.text
+				padding: 60px 200px
+
+// end feedback
+
+// read me
+.section-readme
+	.title
+		margin: auto
+		text-align: center
+		h1
+			text-transform: uppercase
+			font-size: 2.5rem
+			font-weight: 700
+		p
+			margin-bottom: 0
+			color: $xam
+			font-size: 1.2rem
+	.cards
+		margin-top: 20px
+		.card-item
+			&:not(:last-child)
+				margin-bottom: 60px
+			.card
+				overflow: hidden
+				border: none
+				position: relative
+				img
+					height: 235px
+					width: 100%
+					background: #8f8f90
+				.time
+					position: absolute
+					top: 0
+					left: 0
+					background: $xamdam
+					padding: 10px 15px
+					p
+						color: white
+						text-align: center
+						font-weight: 700
+						margin-bottom: 0
+				.card-body
+					padding: 10px 0 0 0
+					.card-title
+						margin-bottom: 0
+					.card-catergory
+						text-transform: uppercase
+						font-size: .9rem
+					.card-summary
+						color: $xam
+					.btn-pill
+						text-transform: uppercase
+						border-radius: 1rem
+						padding: 5px 20px
+						font-weight: 700
+	.see-more-box
+		display: flex
+		.empty
+			flex-grow: 1
+		a
+			text-decoration: underline
+			color: $xam
+	// tablet
+	+media-breakpoint-up(md)
+		.cards
+			.card-item
+				margin-top: 0
+	// pc
+	+media-breakpoint-up(lg)
+		.cards
+			margin-top: 50px
+
+// end read me

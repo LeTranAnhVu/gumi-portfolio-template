@@ -1,0 +1,310 @@
+extends _layout/layout
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.banner-section.container
+		.row
+			.col-md-6.info-col
+				.info-box
+					.intro
+						p Hello, I'm 
+						p.name Lewis Nathaniel 
+						p.role UI & UX  Designer
+					.social-media-box
+						.item
+							a(href="#")
+								i.fa.fa-behance
+						.item
+							a(href="#")
+								i.fa.fa-globe
+						.item
+							a(href="#")
+								i.fa.fa-globe
+						.item
+							a(href="#")
+								i.fa.fa-instagram
+						.item
+							a(href="#")
+								i.fa.fa-facebook
+						.item
+							a(href="#")
+								i.fa.fa-twitter
+					.buttons
+						button.btn.btn-lg.btn-dark.btn-pill hire me
+						button.btn.btn-lg.btn-outline-dark.btn-pill View my resume
+
+			.col-md-6
+				.img-box
+					img(src="./img/designer_photo.png", alt="designer porture")
+				
+	section.work-section.container
+		//- filter part
+		.nav.justify-content-center
+			.nav-item
+				a.nav-link(href="#") All
+			.nav-item
+				a.nav-link(href="#") App
+			.nav-item
+				a.nav-link(href="#") Website
+			.nav-item
+				a.nav-link(href="#") Interaction
+		//- cards
+		.cards
+			.row
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+				.col-lg-4.col-md-6.item
+					.card
+						img.card-img-top(src="#")
+						.card-body
+							.row
+								.col
+									.catergory
+										p.mb-0 catergory
+							.row
+								.col-8
+									.project-title
+										p.mb-0 project title
+								.col-4
+									.year.ml-auto
+										p.mb-0 2018
+		
+
+		//- load more work
+		.load-more-work
+			button.btn.btn-pill load more work
+	section.aboutme-section.container
+		.row
+			.col-lg-6
+				.outer-img-box
+					.img-box
+						img(src="./img/aboutme_designer_photo.png", alt="designer porture")
+			.col-lg-6.content-col
+				.content
+					.title
+						h1 about me
+						p.big-text.mb-0 who am I
+					.text
+						p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident fugit tenetur nemo eaque labore a eos amet necessitatibus ipsum adipisci. Non odit harum veniam laboriosam, placeat facere esse magnam fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda blanditiis reiciendis quisquam numquam velit nulla odit? Quas molestias similique eum consequatur consequuntur deleniti cum est perferendis dolor, necessitatibus eos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident fugit tenetur nemo eaque labore a eos amet necessitatibus ipsum adipisci. Non odit harum veniam laboriosam, placeat facere esse magnam fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda blanditiis reiciendis quisquam numquam velit nulla odit? Quas molestias similique eum consequatur consequuntur deleniti cum est perferendis dolor, necessitatibus eos!
+					.buttons
+						button.btn.btn-lg.btn-dark.btn-pill hire me
+						button.btn.btn-lg.btn-outline-dark.btn-pill View my resume
+
+
+	section.section-feedback.container-fluid
+		.box
+			.text
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a ab itaque rerum corrupti! Fuga praesentium odit, esse, fugiat possimus reiciendis delectus veritatis beatae ipsum placeat suscipit, magni aliquid. Reiciendis.
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a ab itaque rerum corrupti! Fuga praesentium odit, esse, fugiat possimus reiciendis delectus veritatis beatae ipsum placeat suscipit, magni aliquid. Reiciendis.
+			.info-circle-card
+				.avatar-swrapper
+					img(src="#", alt="")
+				.info-content
+					p.name Edward M.brooks
+					p.company 
+						em marketing house
+					.stars
+						i.fa.fa-star
+						i.fa.fa-star
+						i.fa.fa-star
+						i.fa.fa-star-half
+
+
+
+	section.section-readme.container
+		.title
+			h1 read me
+			p Sometimes i write something smart
+		.cards
+			.row
+				.col-lg-4.col-md-6.card-item
+					.card
+						img.card-img-top(src="#")
+						.time
+							p 10
+							p june
+						.card-body
+							.card-title
+								h3 Ten best app 2017
+							.card-catergory
+								p unknown
+							p.card-summary Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae atque placeat, ipsum quas ipsa velit neque sint illum aut distinctio, numquam amet! Quasi deserunt aspernatur accusantium nobis consequatur quis ipsam!
+							button.btn.btn-outline-dark.btn-pill read more
+				.col-lg-4.col-md-6.card-item
+					.card
+						img.card-img-top(src="#")
+						.time
+							p 10
+							p june
+						.card-body
+							.card-title
+								h3 Ten best app 2017
+							.card-catergory
+								p unknown
+							p.card-summary Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae atque placeat, ipsum quas ipsa velit neque sint illum aut distinctio, numquam amet! Quasi deserunt aspernatur accusantium nobis consequatur quis ipsam!
+							button.btn.btn-outline-dark.btn-pill read more
+				.col-lg-4.col-md-6.card-item
+					.card
+						img.card-img-top(src="#")
+						.time
+							p 10
+							p june
+						.card-body
+							.card-title
+								h3 Ten best app 2017
+							.card-catergory
+								p unknown
+							p.card-summary Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae atque placeat, ipsum quas ipsa velit neque sint illum aut distinctio, numquam amet! Quasi deserunt aspernatur accusantium nobis consequatur quis ipsam!
+							button.btn.btn-outline-dark.btn-pill read more
+		.see-more-box
+			.empty
+			a(href="#") see more posts

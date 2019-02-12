@@ -1,0 +1,61 @@
+
+
+header
+	.navbar
+		// padding: 0
+		.navbar-brand
+			display: flex
+			// img 
+			// 	max-height: 2rem
+			.logo-swrapper
+				background: $xamdam no-repeat center center
+				background-size: cover
+				height: 60px
+				width: 60px
+				border-radius: 50%
+				overflow: hidden
+			figcaption
+				h5
+					font-weight: bold
+				p
+					font-size: 12px
+		.navbar-collapse
+			.navbar-nav
+				justify-content: center
+				.nav-item
+					padding: 0
+					position: relative
+					&:not(:last-child)
+						margin-right: 30px
+						&:before
+							transition: all 0.3s ease-in-out
+							position: absolute
+							content: ""
+							display: block
+							width: 0
+							height: 2px
+							background: $xamdam
+							bottom: 5px
+							left: 50%
+							transform: translateX(-50%)
+						&.active,
+						&:hover
+							&:before
+								width: 100%
+					.nav-link
+						color: $xamdam
+						text-transform: uppercase
+						font-weight: bold
+						padding: 0
+					.btn-dark-pill
+						border: 2px $xamdam solid
+						width: 130px
+						border-radius: 4rem
+						&:hover
+							background: $xamdam
+							color: white
+					
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				// max-height: 3rem

@@ -1,0 +1,52 @@
+
+footer
+	background: $xamdam
+	padding: 15px 0
+	.footer-box
+		display: flex
+		flex-direction: column
+		.footer-item
+			&:last-child
+				margin-top: 20px
+			.box
+				display: flex
+				justify-content: center
+				.footer-text-1
+					color: #8d8d8e
+					padding-right: 10px
+					border-right: 1px #8d8d8e solid
+					p
+						margin-bottom: 0
+				.footer-text-2
+					.social-media-box
+						color: #8d8d8e
+						display: flex
+						text-align: center
+						.item
+							padding: 0 5px
+							i
+								font-size: 1.2rem
+			.navbar-nav
+				display: flex
+				flex-direction: row
+				justify-content: center
+				.nav-item
+					margin: 0 10px
+					.nav-link
+						color: #8d8d8e
+						padding: 0
+						&.btn-outline-pill
+							border: 2px #8d8d8e solid
+							border-radius: 1rem
+							padding: 0 10px
+	+media-breakpoint-up(md)
+		.footer-box
+			flex-direction: row
+			justify-content: space-between
+			.footer-item
+				&:last-child
+					margin-top: 0
+				.box
+					justify-content: flex-start
+				.navbar-nav
+					justify-content: flex-end
